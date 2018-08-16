@@ -38,12 +38,12 @@ use yii\helpers\Html;
 
                                 <span><img src="/assets/images/logo-dark.png" alt="" height="22"></span>
                             </a>
-                            <p class="text-muted mb-4 mt-3">登陆。</p>
+                            <p class="text-muted mb-4 mt-3">登录。</p>
                         </div>
 
                         <?php $form = ActiveForm::begin([
                                 'fieldConfig'=>[
-                                        'template'=>'{input}{error}'
+                                        'template'=>'{input}{error}',
                                 ]
                         ])
 
@@ -61,7 +61,7 @@ use yii\helpers\Html;
 
                                 <label for="password">密码</label>
                                 <?php
-                                echo $form->field($model,'password')->textInput(['class'=>'form-control','placeholder'=>'键入你的密码'])
+                                echo $form->field($model,'password')->passwordInput(['class'=>'form-control','placeholder'=>'键入你的密码'])
                                 ?>
 
                             </div>
@@ -70,7 +70,7 @@ use yii\helpers\Html;
                                 <?php
                                 echo $form->field($model,'rememberMe')->checkbox([
                                         'id'=>'checkbox-signin',
-                                    'template'=>'<div class="custom-control custom-checkbox">{input}<label  for="checkbox-signin">记住我</label></div>'
+                                    'template'=>'<div class="custom-control custom-checkbox">{input}<label  for="checkbox-signin">记住我</label></div>',
                                 ])
                                 ?>
 
@@ -78,7 +78,7 @@ use yii\helpers\Html;
 
                             <div class="form-group mb-0 text-center">
                                 <?php
-                                echo Html::submitButton('登陆',['class'=>'btn btn-primary btn-block'])
+                                echo Html::submitButton('登录',['class'=>'btn btn-primary btn-block'])
                                 ?>
 
                             </div>

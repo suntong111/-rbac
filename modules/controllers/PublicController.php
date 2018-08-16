@@ -15,16 +15,18 @@ use yii\web\Controller;
 class PublicController  extends Controller
 {
    public function actionIndex(){
+//       session_start();
+//       var_dump($_SESSION);
        $this->layout=false;
        $model = new Admin();
        if (\Yii::$app->request->isPost){
            $post = \Yii::$app->request->post();
-
+//           var_dump($post);
+//           die;
            if ($model->login($post)){
             $this->redirect(['default/index']);
                \Yii::$app->end();
            }
-
        }
        return $this->render('index',[
            'model'=>$model
