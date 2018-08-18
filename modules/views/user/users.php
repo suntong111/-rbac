@@ -30,16 +30,24 @@
                             DATABATABLE默认情况下启用了大多数特性，因此您需要使用自己的表来调用该结构。 功能：
                             <code>$().DataTable();</code>.
                         </p>
-
+                        <?php
+                        if ($set_flag):
+                        ?>
+                        <div class="button-list">
+                            <a href="<?php echo yii\helpers\Url::to(['user/reg']) ?>">
+                        <button type="button" class="btn btn-primary">新增管理员</button>
+                            </a>
+                        </div>
+                        <?php endif;?>
                         <table id="basic-datatable" class="table dt-responsive nowrap">
                             <thead>
                             <tr>
-                                <th>姓名</th>
-                                <th>性别</th>
-                                <th>工作</th>
+                                <th>id</th>
+                                <th>名字</th>
                                 <th>年龄</th>
                                 <th>开始日期</th>
                                 <th>状态</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
 
@@ -47,12 +55,15 @@
                             <tbody>
                             <?php foreach ($users as $user):?>
                                 <tr>
-                                    <td>默笙</td>
                                     <td><?php echo $user->id ?></td>
                                     <td><?php echo $user->adminuser ?></td>
+
                                     <td>23</td>
-                                    <td>2017/06/25</td>
+                                    <td><?php echo date("Y-m-d H:i:s",$user->logintime)  ?></td>
                                     <td>正常</td>
+                                    <td>
+                                        <a href="<?php echo yii\helpers\Url::to(['user/del', 'id' => $user->id]); ?>">删除</a>
+                                    </td>
                                 </tr>
 
                             <?php endforeach;?>

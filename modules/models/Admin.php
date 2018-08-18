@@ -20,10 +20,10 @@ class Admin extends ActiveRecord
     {
         return [
             'id' => 'ID',
-            'adminuser' => 'Adminuser',
-            'password' => 'Password',
-            'createtime' => 'Createtime',
-            'logintime' => 'Logintime',
+            'adminuser' => '用户名',
+            'password' => '密码',
+            'createtime' => '创建时间',
+            'logintime' => '登录时间',
         ];
     }
 
@@ -31,11 +31,11 @@ class Admin extends ActiveRecord
     public function rules()
     {
         return [
-
-            ['adminuser','required','message'=>'管理账号不能为空'],
-            ['password','required','message'=>'管理员密码不能为空'],
-            ['rememberMe','boolean'],
-            ['password','validatepass'],
+            [['adminuser','password'],'unique','message'=>'账号密码不能重复','on'=>['reg']],
+            ['adminuser','required','message'=>'管理账号不能为空','on'=>['reg','login']],
+            ['password','required','message'=>'管理员密码不能为空','on'=>['reg','login']],
+            ['rememberMe','boolean','on'=>'login'],
+            ['password','validatepass','on'=>'login'],
         ];
     }
 
@@ -54,6 +54,7 @@ class Admin extends ActiveRecord
     }
 
     public function login($data){
+        $this->scenario = 'login';
         if ($this->load($data) && $this->validate()){
             $lifetime = $this->rememberMe ? 24*3600 : 0;
             $session = \Yii::$app->session;
@@ -62,14 +63,27 @@ class Admin extends ActiveRecord
                 'adminuser'=>$this->adminuser,
                 'isLogin'=>1
             ];
-
+//            echo $session['admin']['adminuser'];
+//            die;
             $this->updateAll(['logintime'=>time()],'adminuser = :user',[':user'=>$this->adminuser]);
             return (bool)$session['admin']['isLogin'];
         }
         return false;
     }
 
-
+ public function reg($data,$scenario='reg'){
+        $this->scenario=$scenario;
+  if ($this->load($data) && $this->validate()){
+      $this->createtime = time();
+      $this->status = 1;
+      $this->password = md5($this->password);
+      if ($this->save(false)){
+          return true;
+      }
+      return false;
+  }
+  return false;
+ }
 
 
 }

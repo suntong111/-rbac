@@ -10,6 +10,7 @@ namespace app\modules\controllers;
 
 
 use app\modules\models\Admin;
+use sunt\wx\Application;
 use yii\web\Controller;
 
 class PublicController  extends Controller
@@ -40,6 +41,10 @@ public function actionLogout(){
            \Yii::$app->end();
        }
        $this->goBack();
+}
+
+public function actionCsr(){
+       Application::say();
 }
 
 }

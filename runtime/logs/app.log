@@ -1,0 +1,2997 @@
+2018-08-16 09:23:02 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\validators\RequiredValidator::0' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Component.php:209
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\BaseYii.php(546): yii\base\Component->__set('0', 'unique')
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\BaseObject.php(107): yii\BaseYii::configure(Object(yii\validators\RequiredValidator), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\di\Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\validators\\...', Array, Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\validators\\...', Array, Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\validators\Validator.php(226): yii\BaseYii::createObject(Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Model.php(458): yii\validators\Validator::createValidator('required', Object(app\modules\models\Admin), Array, Array)
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Model.php(420): yii\base\Model->createValidators()
+#9 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Model.php(436): yii\base\Model->getValidators()
+#10 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Model.php(484): yii\base\Model->getActiveValidators('adminuser')
+#11 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\widgets\ActiveField.php(915): yii\base\Model->isAttributeRequired('adminuser')
+#12 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\widgets\ActiveField.php(402): yii\widgets\ActiveField->addAriaAttributes(Array)
+#13 C:\phpStudy\PHPTutorial\WWW\yii123\modules\views\user\reg.php(49): yii\widgets\ActiveField->textInput(Array)
+#14 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\View.php(336): require('C:\\phpStudy\\PHP...')
+#15 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('C:\\phpStudy\\PHP...', Array)
+#16 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\phpStudy\\PHP...', Array, Object(app\modules\controllers\UserController))
+#17 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('reg', Array, Object(app\modules\controllers\UserController))
+#18 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php(44): yii\base\Controller->render('reg', Array)
+#19 [internal function]: app\modules\controllers\UserController->actionReg()
+#20 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#21 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#22 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('reg', Array)
+#23 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/reg', Array)
+#24 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#26 {main}
+2018-08-16 09:23:02 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/reg'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Freg'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Freg'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50924'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Fusers'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534411382.379
+    'REQUEST_TIME' => 1534411382
+]
+2018-08-17 00:45:07 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: admin/user/del' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('del', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/del', Array)
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-08-17 00:45:07 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/del'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1924'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fdel&id=1'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdel&id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51340'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Fusers'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534466707.3
+    'REQUEST_TIME' => 1534466707
+]
+2018-08-17 00:45:13 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: admin/user/del' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('del', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/del', Array)
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-08-17 00:45:13 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/del'
+    'id' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1924'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fdel&id=3'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdel&id=3'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51340'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Fusers'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534466713.775
+    'REQUEST_TIME' => 1534466713
+]
+2018-08-17 00:57:31 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][Exception] exception 'Exception' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php:51
+Stack trace:
+#0 [internal function]: app\modules\controllers\UserController->actionDel()
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('del', Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/del', Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2018-08-17 00:57:31 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/del'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fdel&id=7'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdel&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52297'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Fusers'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534467451.707
+    'REQUEST_TIME' => 1534467451
+]
+2018-08-17 00:57:39 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][Exception] exception 'Exception' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php:51
+Stack trace:
+#0 [internal function]: app\modules\controllers\UserController->actionDel()
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('del', Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/del', Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2018-08-17 00:57:39 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/del'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fdel&id=7'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdel&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52305'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Fusers'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534467459.118
+    'REQUEST_TIME' => 1534467459
+]
+2018-08-17 00:58:12 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][Exception] exception 'Exception' with message '删除失败' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php:51
+Stack trace:
+#0 [internal function]: app\modules\controllers\UserController->actionDel()
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('del', Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/del', Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2018-08-17 00:58:12 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/del'
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1856'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fdel&id=7'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdel&id=7'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52323'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Fusers'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534467491.988
+    'REQUEST_TIME' => 1534467491
+]
+2018-08-17 00:58:59 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][Exception] exception 'Exception' with message '删除失败' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php:51
+Stack trace:
+#0 [internal function]: app\modules\controllers\UserController->actionDel()
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('del', Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/del', Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2018-08-17 00:58:59 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/del'
+    'id' => '4'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1856'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fdel&id=4'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fdel&id=4'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52358'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Fusers'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534467539.582
+    'REQUEST_TIME' => 1534467539
+]
+2018-08-17 01:26:13 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'A session had already been started - ignoring session_start()' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'A session had a...', 'C:\\phpStudy\\PHP...', 18, Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php(18): session_start()
+#2 [internal function]: app\modules\controllers\PublicController->actionIndex()
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/public/in...', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2018-08-17 01:26:13 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpublic%2Findex'
+    'QUERY_STRING' => 'r=admin%2Fpublic%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54026'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Fusers'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534469173.65
+    'REQUEST_TIME' => 1534469173
+]
+2018-08-17 01:26:47 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'A session had already been started - ignoring session_start()' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'A session had a...', 'C:\\phpStudy\\PHP...', 18, Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php(18): session_start()
+#2 [internal function]: app\modules\controllers\PublicController->actionIndex()
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/public/in...', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2018-08-17 01:26:47 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/index'
+]
+
+$_POST = [
+    '_csrf' => 'Zi7gw1iGExZvKHZHuCjaD6P9tai_9EoT_iC4qjaslHQEeNf6KedAfS5tGCbZQ-5D7M7m8cmtIke4FozvaevsQw=='
+    'Admin' => [
+        'adminuser' => 'admin'
+        'password' => '345'
+        'rememberMe' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpublic%2Findex'
+    'QUERY_STRING' => 'r=admin%2Fpublic%2Findex'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54042'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fpublic%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://www.rbac.com'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_LENGTH' => '197'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534469207.37
+    'REQUEST_TIME' => 1534469207
+]
+2018-08-17 01:37:06 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'A session had already been started - ignoring session_start()' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'A session had a...', 'C:\\phpStudy\\PHP...', 18, Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php(18): session_start()
+#2 [internal function]: app\modules\controllers\PublicController->actionIndex()
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/public/in...', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2018-08-17 01:37:06 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1932'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpublic%2Findex'
+    'QUERY_STRING' => 'r=admin%2Fpublic%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54323'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fdefault%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534469826.189
+    'REQUEST_TIME' => 1534469826
+]
+2018-08-17 01:41:00 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'A session had already been started - ignoring session_start()' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'A session had a...', 'C:\\phpStudy\\PHP...', 18, Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php(18): session_start()
+#2 [internal function]: app\modules\controllers\PublicController->actionIndex()
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/public/in...', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2018-08-17 01:41:00 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1924'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpublic%2Findex'
+    'QUERY_STRING' => 'r=admin%2Fpublic%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '54469'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fdefault%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534470060.339
+    'REQUEST_TIME' => 1534470060
+]
+2018-08-17 02:11:49 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\controllers\UserController::current_user' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(39): yii\base\Component->__get('current_user')
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php(26): app\modules\controllers\BaseController->checkPrivilege('user/set')
+#2 [internal function]: app\modules\controllers\UserController->actionUsers()
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/user...', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2018-08-17 02:11:49 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/users'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1932'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fusers'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fusers'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55455'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Freg'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534471909.427
+    'REQUEST_TIME' => 1534471909
+]
+2018-08-17 02:14:05 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\controllers\UserController::ignore_url' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(44): yii\base\Component->__get('ignore_url')
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php(26): app\modules\controllers\BaseController->checkPrivilege('user/set')
+#2 [internal function]: app\modules\controllers\UserController->actionUsers()
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/user...', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2018-08-17 02:14:05 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/users'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1932'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fusers'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fusers'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55513'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Freg'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534472045.696
+    'REQUEST_TIME' => 1534472045
+]
+2018-08-17 02:14:39 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\controllers\UserController::ignore_url' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(44): yii\base\Component->__get('ignore_url')
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php(26): app\modules\controllers\BaseController->checkPrivilege('user/reg')
+#2 [internal function]: app\modules\controllers\UserController->actionUsers()
+#3 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/user...', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2018-08-17 02:14:39 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/users'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1932'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fusers'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fusers'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55527'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Freg'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534472079.618
+    'REQUEST_TIME' => 1534472079
+]
+2018-08-17 02:16:34 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\modules\controllers\UserController::getRolePrivilege()' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(54): yii\base\Component->__call('getRolePrivileg...', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(54): app\modules\controllers\UserController->getRolePrivilege()
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php(26): app\modules\controllers\BaseController->checkPrivilege('user/reg')
+#3 [internal function]: app\modules\controllers\UserController->actionUsers()
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/user...', Array)
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2018-08-17 02:16:34 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/users'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1932'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fusers'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fusers'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55584'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Freg'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534472194.003
+    'REQUEST_TIME' => 1534472194
+]
+2018-08-17 02:21:06 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\controllers\UserController::privilege_urls' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(71): yii\base\Component->__get('privilege_urls')
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(57): app\modules\controllers\BaseController->getRolePrivilege()
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php(26): app\modules\controllers\BaseController->checkPrivilege('user/reg')
+#3 [internal function]: app\modules\controllers\UserController->actionUsers()
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/user...', Array)
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2018-08-17 02:21:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/user/users'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1928'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fusers'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fusers'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55783'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fuser%2Freg'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534472465.985
+    'REQUEST_TIME' => 1534472465
+]
+2018-08-17 02:21:07 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\controllers\UserController::privilege_urls' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(71): yii\base\Component->__get('privilege_urls')
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(57): app\modules\controllers\BaseController->getRolePrivilege()
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php(26): app\modules\controllers\BaseController->checkPrivilege('user/reg')
+#3 [internal function]: app\modules\controllers\UserController->actionUsers()
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/user...', Array)
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2018-08-17 02:21:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'admin/user/users'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1928'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fusers'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fusers'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55785'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fdefault%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534472467.314
+    'REQUEST_TIME' => 1534472467
+]
+2018-08-17 02:21:13 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\modules\controllers\UserController::privilege_urls' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(71): yii\base\Component->__get('privilege_urls')
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\BaseController.php(57): app\modules\controllers\BaseController->getRolePrivilege()
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\UserController.php(26): app\modules\controllers\BaseController->checkPrivilege('user/reg')
+#3 [internal function]: app\modules\controllers\UserController->actionUsers()
+#4 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#7 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('admin/user/user...', Array)
+#8 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2018-08-17 02:21:12 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/user/users'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1928'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fuser%2Fusers'
+    'QUERY_STRING' => 'r=admin%2Fuser%2Fusers'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55793'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.rbac.com/index.php?r=admin%2Fdefault%2Findex'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534472472.894
+    'REQUEST_TIME' => 1534472472
+]
+2018-08-18 00:56:19 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 00:56:19 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1928'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60252'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534553779.605
+    'REQUEST_TIME' => 1534553779
+]
+2018-08-18 00:57:35 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 00:57:35 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1928'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60292'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534553855.693
+    'REQUEST_TIME' => 1534553855
+]
+2018-08-18 00:57:37 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 00:57:37 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1928'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60293'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534553857.367
+    'REQUEST_TIME' => 1534553857
+]
+2018-08-18 00:57:38 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 00:57:38 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1928'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60294'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534553858.646
+    'REQUEST_TIME' => 1534553858
+]
+2018-08-18 01:03:58 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:03:58 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60489'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554238.211
+    'REQUEST_TIME' => 1534554238
+]
+2018-08-18 01:04:00 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:04:00 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60490'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554240.4
+    'REQUEST_TIME' => 1534554240
+]
+2018-08-18 01:05:16 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:05:16 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60538'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554316.173
+    'REQUEST_TIME' => 1534554316
+]
+2018-08-18 01:05:17 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:05:17 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60539'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554317.042
+    'REQUEST_TIME' => 1534554317
+]
+2018-08-18 01:05:17 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:05:17 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60540'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554317.587
+    'REQUEST_TIME' => 1534554317
+]
+2018-08-18 01:05:43 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:05:43 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60558'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554343.6
+    'REQUEST_TIME' => 1534554343
+]
+2018-08-18 01:05:44 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:05:44 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin/public/csr'
+    'QUERY_STRING' => 'r=admin/public/csr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60559'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554344.46
+    'REQUEST_TIME' => 1534554344
+]
+2018-08-18 01:11:55 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:11:55 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpublic%2Fcsr'
+    'QUERY_STRING' => 'r=admin%2Fpublic%2Fcsr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60823'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554715.109
+    'REQUEST_TIME' => 1534554715
+]
+2018-08-18 01:13:01 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/site".' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index/site', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-08-18 01:13:01 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'index/site'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=index/site'
+    'QUERY_STRING' => 'r=index/site'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60850'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554781.587
+    'REQUEST_TIME' => 1534554781
+]
+2018-08-18 01:13:08 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/site/index".' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index/site/inde...', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-08-18 01:13:08 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'index/site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=index/site/index'
+    'QUERY_STRING' => 'r=index/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60851'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554788.511
+    'REQUEST_TIME' => 1534554788
+]
+2018-08-18 01:13:32 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "controller/site".' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('controller/site', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-08-18 01:13:32 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'controller/site'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=controller/site'
+    'QUERY_STRING' => 'r=controller/site'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '60873'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554812.485
+    'REQUEST_TIME' => 1534554812
+]
+2018-08-18 01:15:22 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\controllers\SiteController.php:65
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:15:22 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61029'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554922.887
+    'REQUEST_TIME' => 1534554922
+]
+2018-08-18 01:15:26 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\controllers\SiteController.php:65
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:15:26 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61030'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554926.687
+    'REQUEST_TIME' => 1534554926
+]
+2018-08-18 01:15:41 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "controller/site".' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('controller/site', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-08-18 01:15:41 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'controller/site'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=controller/site'
+    'QUERY_STRING' => 'r=controller/site'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61043'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554941.925
+    'REQUEST_TIME' => 1534554941
+]
+2018-08-18 01:15:43 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/site/index".' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index/site/inde...', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-08-18 01:15:43 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'index/site/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=index/site/index'
+    'QUERY_STRING' => 'r=index/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61043'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554943.102
+    'REQUEST_TIME' => 1534554943
+]
+2018-08-18 01:15:44 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/site".' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('index/site', Array)
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\phpStudy\PHPTutorial\WWW\yii123\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\phpStudy\PHPTutorial\WWW\yii123\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-08-18 01:15:44 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'index/site'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=index/site'
+    'QUERY_STRING' => 'r=index/site'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61043'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554944.059
+    'REQUEST_TIME' => 1534554944
+]
+2018-08-18 01:15:44 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:15:44 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpublic%2Fcsr'
+    'QUERY_STRING' => 'r=admin%2Fpublic%2Fcsr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61043'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554944.643
+    'REQUEST_TIME' => 1534554944
+]
+2018-08-18 01:15:47 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:15:46 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1920'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpublic%2Fcsr'
+    'QUERY_STRING' => 'r=admin%2Fpublic%2Fcsr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61044'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534554946.956
+    'REQUEST_TIME' => 1534554946
+]
+2018-08-18 01:20:45 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'sunt\wx\Application' not found' in C:\phpStudy\PHPTutorial\WWW\yii123\modules\controllers\PublicController.php:47
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-18 01:20:45 [127.0.0.1][-][ng7e6rcojk5nf901dhb9judqo7][info][application] $_GET = [
+    'r' => 'admin/public/csr'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'ng7e6rcojk5nf901dhb9judqo7'
+    '_csrf' => 'c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'adminuser' => 'admin'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\bin;C:\\Program Files (x86)\\Java\\jdk1.7.0_05\\jre\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\TortoiseSVN\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\adb;C:\\Android;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Python35;C:\\Python35\\Scripts;D:\\mongodb\\bin;C:\\Program Files\\Git\\cmd;C:\\phpStudy\\PHPTutorial\\php\\php-5.6.27-nts;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'C:/phpStudy/PHPTutorial/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '1768'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=admin%2Fpublic%2Fcsr'
+    'QUERY_STRING' => 'r=admin%2Fpublic%2Fcsr'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61691'
+    'SCRIPT_FILENAME' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web/index.php'
+    'SERVER_ADMIN' => 'admin@php.cn'
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'C:/phpStudy/PHPTutorial/WWW/yii123/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.rbac.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'PHPSESSID=ng7e6rcojk5nf901dhb9judqo7; _csrf=c8e12926091d056ec2d92d64ead1896122bdd3fbe238c29cab2136a9f03d3b4ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22bV79qaSkAEnaak4LO3SYvYhTF64E_Gx7%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.rbac.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534555245.564
+    'REQUEST_TIME' => 1534555245
+]

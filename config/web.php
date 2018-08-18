@@ -10,6 +10,7 @@ $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+        'sunt\wx'   => '@app/runtime/tmp-extensions/yii2-wx/src',
     ],
     'components' => [
         'request' => [

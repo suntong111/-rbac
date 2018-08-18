@@ -1,0 +1,21 @@
+{
+    "name": "sunt/yii2-wx",
+    "description": "微信开发",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","wechat"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sunt",
+            "email": "592691858@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sunt\\wx\\": ""
+        }
+    }
+}
