@@ -74,6 +74,7 @@ if (YII_ENV_DEV) {
     ];
     $config['modules']['admin']=[
         'class' => 'app\modules\admin',
+        'layout'=>'main'
     ];
 }
 

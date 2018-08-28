@@ -1,4 +1,7 @@
-
+<?php
+use yii\widgets\Menu;
+use yii\grid\GridView;
+?>
 <!-- End Navigation Bar-->
 
 <div class="wrapper">

@@ -1,5 +1,50 @@
 [
     {
+        "name": "abei2017/yii2-wx",
+        "version": "v1.1.1",
+        "version_normalized": "1.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/abei2017/yii2-wx.git",
+            "reference": "1779d9003cd2cf4db913e281063e6febb391370c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/abei2017/yii2-wx/zipball/1779d9003cd2cf4db913e281063e6febb391370c",
+            "reference": "1779d9003cd2cf4db913e281063e6febb391370c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4",
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-httpclient": "^2.0"
+        },
+        "time": "2018-04-20T11:54:48+00:00",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "abei2017\\wx\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "abei",
+                "email": "abei@nai8.me"
+            }
+        ],
+        "description": "一个专注于yii2的微信sdk",
+        "keywords": [
+            "extension",
+            "wechat",
+            "yii2"
+        ]
+    },
+    {
         "name": "behat/gherkin",
         "version": "v4.5.1",
         "version_normalized": "4.5.1.0",

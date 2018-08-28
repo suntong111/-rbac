@@ -22,6 +22,7 @@ use yii\helpers\Html;
     <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
+
 </head>
 
 <body class="authentication-bg">
@@ -74,6 +75,11 @@ use yii\helpers\Html;
                                 ])
                                 ?>
 
+<!--                                <div class="col-md-3 col-xs-4 mr20">-->
+<!--                                    <img id="imgVerifyCode" onclick="changeVerifyCode()"  alt="验证码">-->
+<!--                                </div>-->
+
+
                             </div>
 
                             <div class="form-group mb-0 text-center">
@@ -105,6 +111,9 @@ use yii\helpers\Html;
 <!-- App js -->
 <script src="/assets/js/vendor.min.js"></script>
 <script src="/assets/js/app.min.js"></script>
+<script type="text/javascript">
+
+</script>
 
 </body>
 </html>

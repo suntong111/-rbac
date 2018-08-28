@@ -28,6 +28,10 @@ class ComposerStaticInitb37eb1d6323f7ab5b1f5cfca34fdcb8b
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+        's' => 
+        array (
+            'sunt\\wx\\' => 8,
+        ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
@@ -35,6 +39,10 @@ class ComposerStaticInitb37eb1d6323f7ab5b1f5cfca34fdcb8b
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
+        ),
+        'a' => 
+        array (
+            'abei2017\\wx\\' => 12,
         ),
         'W' => 
         array (
@@ -112,6 +120,10 @@ class ComposerStaticInitb37eb1d6323f7ab5b1f5cfca34fdcb8b
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+        'sunt\\wx\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -121,6 +133,10 @@ class ComposerStaticInitb37eb1d6323f7ab5b1f5cfca34fdcb8b
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
+        ),
+        'abei2017\\wx\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/abei2017/yii2-wx/src',
         ),
         'Webmozart\\Assert\\' => 
         array (

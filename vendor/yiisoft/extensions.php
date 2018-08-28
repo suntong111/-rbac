@@ -57,4 +57,13 @@ return array (
       '@yii/httpclient' => $vendorDir . '/yiisoft/yii2-httpclient/src',
     ),
   ),
+  'abei2017/yii2-wx' => 
+  array (
+    'name' => 'abei2017/yii2-wx',
+    'version' => '1.1.1.0',
+    'alias' => 
+    array (
+      '@abei2017/wx' => $vendorDir . '/abei2017/yii2-wx/src',
+    ),
+  ),
 );
