@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php $this->beginPage() ?>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,7 +10,7 @@
 
     <!-- App favicon -->
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
-
+    <link href="/assets/css/vendor/fullcalendar.min.css" rel="stylesheet" type="text/css" />
     <!-- App css -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -247,7 +247,7 @@
                                 <a href="<?php echo yii\helpers\Url::to(['user/users'])  ?>">管理员列表</a>
                             </li>
                             <li>
-                                <a href="form-advanced.html">新增管理员</a>
+                                <a href="<?php echo yii\helpers\Url::to(['user/reg']) ?>">新增管理员</a>
                             </li>
                         </ul>
                     </li>
@@ -268,12 +268,25 @@
                     </li>
 
                     <li class="has-submenu">
+                        <a href="#"> <i class="fe-gift"></i>商品</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="icons-feather.html">商品列表</a>
+                            </li>
+                            <li>
+                                <a href="icons-mdi.html">商品添加</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
                         <a href="#"> <i class="fe-package"></i>页面</a>
                         <ul class="submenu megamenu">
                             <li>
                                 <ul>
                                     <li>
-                                        <a href="pages-calendar.html">日历</a>
+                                        <a href="<?= \yii\helpers\Url::to(['user/tim'])?>">日历</a>
                                     </li>
                                     <li>
                                         <a href="pages-timeline.html">时间轴</a>
@@ -368,11 +381,13 @@
 <script src="/assets/js/vendor/buttons.print.min.js"></script>
 <script src="/assets/js/vendor/dataTables.keyTable.min.js"></script>
 <script src="/assets/js/vendor/dataTables.select.min.js"></script>
+
 <!-- third party js ends -->
 
 <!-- demo app -->
-<script src="/assets/js/pages/datatables.init.js"></script>
+<!--<script src="/assets/js/pages/datatables.init.js"></script>-->
 <!-- end demo js-->
 
 </body>
 </html>
+<?php $this->endPage() ?>

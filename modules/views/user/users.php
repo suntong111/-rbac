@@ -14,7 +14,7 @@
                             <li class="breadcrumb-item active">高级表格</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">高级表格</h4>
+                    <h4 class="page-title">管理员</h4>
                 </div>
             </div>
         </div>
@@ -25,20 +25,15 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="header-title">基本数据表格</h4>
-                        <p class="text-muted font-13 mb-4">
-                            DATABATABLE默认情况下启用了大多数特性，因此您需要使用自己的表来调用该结构。 功能：
-                            <code>$().DataTable();</code>.
-                        </p>
-                        <?php
-                        if ($set_flag):
-                        ?>
-                        <div class="button-list">
+                        <h4 class="header-title">管理员列表</h4>
+
+
+                        <div class="button-list"style="float: right">
                             <a href="<?php echo yii\helpers\Url::to(['user/reg']) ?>">
                         <button type="button" class="btn btn-primary">新增管理员</button>
                             </a>
                         </div>
-                        <?php endif;?>
+
                         <table id="basic-datatable" class="table dt-responsive nowrap">
                             <thead>
                             <tr>
@@ -62,8 +57,14 @@
                                     <td><?php echo date("Y-m-d H:i:s",$user->logintime)  ?></td>
                                     <td>正常</td>
                                     <td>
+                                        <a href="<?php echo yii\helpers\Url::to(['user/edit', 'id' => $user->id]); ?>">编辑</a>
                                         <a href="<?php echo yii\helpers\Url::to(['user/del', 'id' => $user->id]); ?>">删除</a>
+
                                     </td>
+
+
+
+
                                 </tr>
 
                             <?php endforeach;?>
@@ -76,7 +77,16 @@
         </div>
         <!-- end row-->
 
-
+        <div class="dataTables_paginate paging_simple_numbers" style="float: right">
+            <?php echo \yii\widgets\LinkPager::widget([
+                'pagination' => $pager,
+//                'options' => ['class' => 'm-pagination'],
+                'prevPageLabel' => '上一页',
+                'nextPageLabel' => '下一页;',
+            ]) ?>
+        </div>
+        <!-- end users table -->
+    </div>
 
 
 

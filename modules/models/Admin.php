@@ -31,9 +31,9 @@ class Admin extends ActiveRecord
     public function rules()
     {
         return [
-            [['adminuser','password'],'unique','message'=>'账号密码不能重复','on'=>['reg']],
-            ['adminuser','required','message'=>'管理账号不能为空','on'=>['reg','login']],
-            ['password','required','message'=>'管理员密码不能为空','on'=>['reg','login']],
+            [['adminuser','password'],'unique','message'=>'账号密码不能重复','on'=>['reg','rg']],
+            ['adminuser','required','message'=>'管理账号不能为空','on'=>['reg','login','rg']],
+            ['password','required','message'=>'管理员密码不能为空','on'=>['reg','login','rg']],
             ['rememberMe','boolean','on'=>'login'],
             ['password','validatepass','on'=>'login'],
         ];
@@ -84,6 +84,18 @@ class Admin extends ActiveRecord
   }
   return false;
  }
-
+public function edit($data,$scenario='rg'){
+    $this->scenario=$scenario;
+    if ($this->load($data) && $this->validate()){
+        $this->createtime = time();
+        $this->status = 1;
+        $this->password = md5($this->password);
+        if ($this->save(false)){
+            return true;
+        }
+        return false;
+    }
+    return false;
+}
 
 }

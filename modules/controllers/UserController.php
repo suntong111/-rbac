@@ -13,18 +13,18 @@ use app\modules\models\Admin;
 use yii\data\Pagination;
 use yii\web\Controller;
 
-class UserController extends BaseController
+class UserController extends Controller
 {
     public function actionUsers(){
         $this->layout='layout1';
-        $model = Admin::find()->where(['status'=>1]);
+        $model = Admin::find();
         $count = $model->count();
         $pageSize = \Yii::$app->params['pageSize']['admin'];
         $pager = new Pagination(['totalCount'=>$count,'pageSize'=>$pageSize]);
         $users = $model->offset($pager->offset)->limit($pager->limit)->all();
 
-        $set_flag = $this->checkPrivilege( "user/reg" );
-        return $this->render('users',['users'=>$users,'pager'=>$pager,'set_flag'=>$set_flag]);
+
+        return $this->render('users',['users'=>$users,'pager'=>$pager]);
     }
 
 
@@ -54,5 +54,27 @@ class UserController extends BaseController
        }else{
            $this->redirect(['user/users']);
        }
+    }
+
+    public function actionEdit(){
+        $this->layout='layout1';
+        $id = \Yii::$app->request->get('id');
+        $model = Admin::findOne($id);
+        if(!$model){
+            throw new \Exception('不存在改用户');
+        }
+        if (\Yii::$app->request->isPost){
+            $post = \Yii::$app->request->post();
+//            var_dump($post);
+//            die;
+            if ($model->edit($post)){
+            return $this->redirect(['user/users']);
+            }
+        }
+        return $this->render('rg',['model'=>$model]);
+    }
+    public function actionTim(){
+        $this->layout='layout1';
+        return $this->render('tim');
     }
 }
